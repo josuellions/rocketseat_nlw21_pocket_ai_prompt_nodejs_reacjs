@@ -1,0 +1,35 @@
+{
+  // PRETTIER
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+
+  // EDITOR
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.6,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.glyphMargin": false,
+
+  // ZEN MODE
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "zenMode.showTabs": "single",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "chat.mcp.serverSampling": {
+    "rocketseat_nlw21_pocket_ai_prompt_nodejs_reacjs/.vscode/mcp.json: Figma MCP": {
+      "allowedModels": [
+        "copilot/gpt-4.1",
+        "copilot/gpt-4o",
+        "copilot/gpt-5-mini"
+      ]
+    }
+  }
+}
