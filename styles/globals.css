@@ -1,0 +1,164 @@
+:root {
+  /* White */
+  --white: #ffffff;
+
+  /* Accent */
+  --accent-600: #4863f7;
+  --accent-500: #7878d7;
+
+  /* Alert */
+  --alert-600: #ff5c5c;
+
+  /* Gray */
+  --gray-900: #0d0d0d;
+  --gray-800: #111111;
+  --gray-700: #1a1a1a;
+  --gray-200: #424242;
+  --gray-100: #737373;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-100);
+  border-radius: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    var(--gray-900),
+    var(--gray-800),
+    var(--gray-700),
+    var(--gray-200)
+  );
+  color: var(--white);
+  height: 100vh;
+}
+
+body,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  flex: 1;
+  gap: 8rem;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  padding: 15.5rem 31rem;
+}
+
+.main-header {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main h1 {
+  width: 100%;
+  font-weight: 700;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 44px;
+  gap: 10px;
+}
+
+.btn-outline {
+  transition: background-color 0.5s;
+  background: rgba(27, 27, 27, 0.3);
+  border: 0.5px solid var(--gray-200);
+  color: var(--white);
+  padding: 0 16px;
+}
+
+.btn-outline:hover {
+  background-color: var(--gray-200);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-primary {
+  background: var(--accent-600);
+  border: 1px solid var(--accent-500);
+  color: var(--white);
+  padding: 0 24px;
+  transition: opacity 0.5s;
+}
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.w-150 {
+  width: 150px;
+  justify-content: center;
+}
+
+.prompt-title {
+  font-weight: 600;
+  font-size: 32px;
+  outline: none;
+}
+
+.prompt-content {
+  color: var(--white);
+  font-size: 16px;
+  outline: none;
+  line-height: 32px;
+}
+
+.editable-wrapper::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  color: var(--gray-200);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.editable-wrapper.is-empty::before {
+  opacity: 1;
+}
+
+#title-wrapper.is-empty {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--gray-200);
+}
+
+#content-wrapper.is-empty {
+  font-size: 16px;
+  color: var(--gray-200);
+}
