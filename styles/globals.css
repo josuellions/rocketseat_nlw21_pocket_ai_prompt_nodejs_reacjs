@@ -65,6 +65,7 @@ button {
   flex: 1;
   gap: 8rem;
   display: flex;
+  height: 100vh;
   overflow-y: scroll;
   flex-direction: column;
   padding: 15.5rem 31rem;
@@ -161,4 +162,84 @@ button {
 #content-wrapper.is-empty {
   font-size: 16px;
   color: var(--gray-200);
+  line-height: 32px;
+}
+
+.btn-icon {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.open-toggle {
+  position: absolute;
+  display: none;
+  left: 62px;
+  top: 62px;
+}
+
+.sidebar {
+  gap: 50px;
+  width: 400px;
+  padding: 32px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--gray-800);
+  border-right: 0.5px solid var(--gray-700);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 24px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-700);
+  gap: 20px;
+}
+
+.search-icon {
+  transform: translateY(-50%);
+  position: absolute;
+  left: 16px;
+  top: 22px;
+}
+
+.search-input {
+  background: transparent;
+  height: 44px;
+  width: 100%;
+  border: 1px solid var(--gray-200);
+  outline: none;
+  color: var(--white);
+  font-size: 16px;
+  border-radius: 6px;
+  padding-left: 48px;
+}
+
+.search-input::placeholder {
+  color: var(--gray-200);
+}
+
+.btn-full {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
